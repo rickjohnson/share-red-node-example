@@ -1,8 +1,8 @@
 {
-  "name": "share-red-example-node",
+  "name": "share-property-mapper",
   "version": "0.1.0",
   "description": "",
-  "main": "example-node.js",
+  "main": "share-property-mapper.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +10,7 @@
   "license": "ISC",
   "node-red": {
     "nodes": {
-      "example-node": "example-node.js"
+      "example-node": "share-property-mapper.js"
     }
   }
 }

@@ -1,0 +1,39 @@
+3<script type="text/javascript">
+  RED.nodes.registerType("share-property-mapper", {
+    // The following adds this node to the "share" category in the node selection menu.
+    category: "share",
+    color: "#ecfafc",
+    defaults: {
+        name: { value: "" },
+        inpropname: {value: ""},
+        outpropname: {value: ""},
+        inwork: {value: {} }
+    },
+    inputs: 3,
+    outputs: 1,
+    icon: "share.png",
+    label: function() {
+      return this.name || "share-property-mapper"
+    }
+  })
+</script>
+
+<script type="text/x-red" data-template-name="share-property-mapper">
+  <div class="form-row">
+      <label for="node-input-inpropname"><i class="icon-tag"></i> Input Property Name</label>
+      <input type="text" id="node-input-inpropname">
+  </div>
+  <div class="form-row">
+      <label for="node-input-outpropname"><i class="icon-tag"></i> Output Property Name</label>
+      <input type="text" id="node-input-outpropname">
+  </div>
+  <div class="form-row">
+    <label for="node-input-inwork"><i class="icon-tag"></i> Input Work</label>
+    <input type="text" id="node-input-inwork">
+    <input type="hidden" id="node-input-inwork">
+  </div>
+</script>
+
+<script type="text/x-red" data-help-name="share-property-mapper">
+  <p>An example node designed to help people jumpstart their share-red development.</p>
+</script>
